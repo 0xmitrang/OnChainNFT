@@ -6,7 +6,6 @@ const skipIf = require('mocha-skip-if')
 const fs = require('fs')
 const { deployments, getChainId, ethers } = require('hardhat')
 const { networkConfig, developmentChains } = require('../helper-hardhat-config')
-const SVGNFT_ABI = require('../artifacts/contracts/SVGNFT.sol/SVGNFT.json')
 const { assert } = require('console')
 
 skip.if(!developmentChains.includes(network.name)).
